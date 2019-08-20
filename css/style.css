@@ -219,6 +219,11 @@ img {
   padding: 20px;
 }
 
+.produtos-icone img {
+  margin: 0 auto;
+}
+
+
 .produtos-lista li p {
   padding: 10px 20px 20px 20px;
 }
