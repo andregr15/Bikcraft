@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/responsivo.css">
+    <script>document.documentElement.classList.add("js");</script>
   </head>
 
   <body>
@@ -49,14 +50,14 @@
 
     <section class="introducao-interna interna-portfolio">
       <div class="container">
-        <h1>Portfólio</h1>
-        <p>conheça os projetos que amamos mostrar</p>
+        <h1 data-anime="400" class="fadeInDown">Portfólio</h1>
+        <p data-anime="800" class="fadeInDown"></p>conheça os projetos que amamos mostrar</p>
       </div>
     </section>
 
     <!-- Fecha Introdução -->
 
-    <section class="container">
+    <section class="container fadeInDown" data-slide="quote" data-anime="1200">
       <blockquote class="quote-clientes">
         <p>
           "No mundo atual, a contínua expansão de nossa atividade cumpre um papel
@@ -64,15 +65,36 @@
         </p>
         <cite>Barbara Moss</cite>
       </blockquote>
+
+      <blockquote class="quote-clientes">
+        <p>
+          "Seja como for o que penses, creio que é melhor dizê-lo com boas palavras."
+        </p>
+        <cite>William Shakespeare</cite>
+      </blockquote>
+
+      <blockquote class="quote-clientes">
+        <p>
+          "Não creio, no sentido filosófico do termo, na liberdade do homem. Todos agem não apenas 
+          sob um constrangimento exterior mas também de acordo com uma necessidade interior."
+        </p>
+        <cite>Albert Einstein</cite>
+      </blockquote>
     </section>
 
     <!-- Fecha Citação -->
 
     <section class="portfolio">
-      <div class="container">
+      <div class="container" data-slide="portfolio">
         <ul class="portfolio-lista">
           <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="bicicleta retro"></li>
           <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="bicicleta passeio"></li>
+          <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="bicicleta esporte"></li>
+        </ul>
+
+        <ul class="portfolio-lista">
+          <li class="grid-8"><img src="img/produtos/bikcraft-esporte-2.jpg" alt="bicicleta retro"></li>
+          <li class="grid-8"><img src="img/produtos/bikcraft-retro-2.jpg" alt="bicicleta passeio"></li>
           <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="bicicleta esporte"></li>
         </ul>
       </div>
@@ -133,6 +155,10 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/simple-slide.js"></script>
+    <script src="./js/simple-anime.js"></script>
+    <script src="./js/script.js"></script>
 
   </body>
 </html>
